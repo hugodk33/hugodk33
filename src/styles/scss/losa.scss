@@ -1,0 +1,56 @@
+section {
+    height: 900px;
+    background-size: 100%;
+    color: white;
+    background-color: black;
+}
+
+p {
+    font-size: 18px;
+}
+
+.tornaCinza {
+    color: gray;
+    font-size: 19px;
+    padding-bottom: 1px;
+    position: relative;
+    top: -2px;
+}
+
+.txt-banner {
+    padding-top: 130px
+}
+
+.moldura-1 {
+    width: 217px;
+    height: 291px;
+    border: 4px blue solid;
+    position: absolute;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(-11deg);
+    top: 93px;
+    left: 25px;
+    float: left;
+}
+
+.moldura-2 {
+    width: 217px;
+    height: 291px;
+    border: 7px gray solid;
+    position: absolute;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(-11deg);
+    top: 105px;
+    left: 41px;
+    float: left;
+}
+
+.horse {
+    position: absolute;
+    float: left;
+}
+
+.avatar {
+    width: 100px;
+    float: left;
+}
