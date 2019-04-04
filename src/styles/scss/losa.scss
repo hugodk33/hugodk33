@@ -1,8 +1,9 @@
-section {
-    height: 900px;
+.LosaSection {
     background-size: 100%;
     color: white;
     background-color: black;
+    height:  650px;
+    padding-top: 60px;
 }
 
 p {
@@ -36,7 +37,7 @@ p {
 .moldura-2 {
     width: 217px;
     height: 291px;
-    border: 7px gray solid;
+    border: 5px gray solid;
     position: absolute;
     -webkit-transform: rotate(20deg);
     transform: rotate(-11deg);

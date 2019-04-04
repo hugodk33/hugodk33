@@ -1,0 +1,65 @@
+.bio {
+   
+}
+
+.BioSection {
+    background-image: url('../../img/BgCinza.jpg');
+    height: 550px;
+    color: white;
+}
+
+.bio {
+    .TitleCamp {
+        margin-bottom: 5px;
+    }
+
+    .Camp {
+        margin: 0 0 7px 0;
+        width: 300px;
+        background-color: black;
+        box-shadow: 2px 2px 0px gray;
+        .Barra {
+            height: 100%;
+            width: 300px;
+            background-image: linear-gradient(to right, blue, #020263);
+            background-color: #020263
+        }
+
+        .BarraMov-iN {
+            overflow: hidden;
+            height: 8px;
+            width: 0%;
+        }
+
+        .BarraMov-Out-1 {
+            overflow: hidden;
+            height: 8px;
+            width: 80%;
+            -webkit-animation-name: 'animaCamp'; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+            animation-name: 'animaCamp';
+            animation-duration: 1s;
+        }
+
+        @keyframes animaCamp {
+            0% { opacity: 0 }
+            100% {  opacity: 1  }
+        }
+    }
+
+    .LegendaCamp {
+        font-size: 13px;
+        margin-bottom: 5px
+    }    
+
+    .TitlePericia {
+        margin: 15px 0;
+    }
+
+    hr {
+        width: 80%;
+        float: right;
+        border-top: 1px solid white;
+        margin-top: -25px
+    }
+}

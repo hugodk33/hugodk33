@@ -1,0 +1,25 @@
+.PortSection {
+    background-color: black;
+    color: white;
+
+    .TitlePort {
+        margin-top: 30px;
+    }
+    .btnGitHub {
+        background-color: #282828;
+        color: white;
+        border: none;
+        margin: 0 0 6px 5px
+    }
+
+    .btnProject {
+        background-color: blue;
+        color: white;
+        border: none;
+        margin: 0 0 6px 0
+    }
+
+    .TituloPort {
+        margin-top: 30px
+    }
+}
