@@ -1,5 +1,5 @@
 .BioSection {
-  background-image: url("../../img/BgCinza.jpg");
+  background-color: black;
   height: 550px;
   color: white;
 }
@@ -37,10 +37,10 @@
 }
 @keyframes animaCamp {
   0% {
-    opacity: 0;
+    width: 0%;
   }
   100% {
-    opacity: 1;
+    opacity: 80%;
   }
 }
 .bio .LegendaCamp {
@@ -57,4 +57,4 @@
   margin-top: -25px;
 }
 
-/*# sourceMappingURL=bio.css.map */
+/*# sourceMappingURL=Bio.css.map */

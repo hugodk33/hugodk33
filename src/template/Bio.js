@@ -14,40 +14,23 @@ export default class Bio extends Component {
                             </div>
                             <div className={'col-4'}>
                                 <h4>Front End</h4>
-                                <Biocamps title={'java script'} size={'80%'} status={'Avançado'}/>
-                                <p className={'TitleCamp'}>EC6</p>
-                                <div className={'Camp'}><div className={'BarraMov-iN'}><div className={'Barra'}></div></div></div>
-                                <p className={'LegendaCamp'}>.</p>
-                                <p className={'TitleCamp'}>Node</p>
-                                <div className={'Camp'}><div className={'BarraMov-iN'}><div className={'Barra'}></div></div></div>
-                                <p className={'LegendaCamp'}>.</p>
-                                <p className={'TitleCamp'}>React JS</p>
-                                <div className={'Camp'}><div className={'BarraMov-iN'}><div className={'Barra'}></div></div></div>
-                                <p className={'LegendaCamp'}>.</p>
-                                <p className={'TitleCamp'}>React Redux</p>
-                                <div className={'Camp'}><div className={'BarraMov-iN'}><div className={'Barra'}></div></div></div>
-                                <p className={'LegendaCamp'}>.</p>
-                                <p className={'TitleCamp'}>React Native</p>
-                                <div className={'Camp'}><div className={'BarraMov-iN'}><div className={'Barra'}></div></div></div>
-                                <p className={'LegendaCamp'}>.</p>
+                                <Biocamps title={'Java Script'} size={90} status={'AVANÇADO'}/>
+                                <Biocamps title={'EC6'} size={70} status={'AVANÇADO'}/>
+                                <Biocamps title={'Node'} size={50} status={'INTERMEDIÁRIO'}/>
+                                <Biocamps title={'React Js'} size={85} status={'AVANÇADO'}/>
+                                <Biocamps title={'React Redux'} size={95} status={'AVANÇADO'}/>
+                                <Biocamps title={'React Native'} size={20} status={'NOÇÕES BÁSICAS'}/>
                             </div>
                             <div className={'col-4'}>
                                 <h4>Web Design</h4>
-                                <p className={'TitleCamp'}>HTML</p>
-                                <div className={'Camp'}><div className={'BarraMov-iN'}><div className={'Barra'}></div></div></div>
-                                <p className={'LegendaCamp'}>.</p>
-                                <p className={'TitleCamp'}>CSS</p>
-                                <div className={'Camp'}><div className={'BarraMov-iN'}><div className={'Barra'}></div></div></div>
-                                <p className={'LegendaCamp'}>.</p>
-                                <p className={'TitleCamp'}>WordPress</p>
-                                <div className={'Camp'}><div className={'BarraMov-iN'}><div className={'Barra'}></div></div></div>
-                                <p className={'LegendaCamp'}>.</p>
+                                <Biocamps title={'HTML'} size={90} status={'AVANÇADO'}/>
+                                <Biocamps title={'CSS'} size={90} status={'AVANÇADO'}/>
+                                <Biocamps title={'Bootstrap'} size={70} status={'AVANÇADO'}/>
+                                <Biocamps title={'Word Press'} size={60} status={'INTERMEDIÁRIO'}/>
                             </div>  
                             <div className={'col-4'}>
                                 <h4>Back End</h4>
-                                <p className={'TitleCamp'}>Java EE</p>
-                                <div className={'Camp'}><div className={'BarraMov-iN'}><div className={'Barra'}></div></div></div>
-                                <p className={'LegendaCamp'}>.</p>
+                                <Biocamps title={'Java EE'} size={20} status={'NOÇÕES BÁSICAS'}/>
                             </div>                            
                         </div>
                     </div>

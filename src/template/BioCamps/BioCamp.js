@@ -1,26 +1,48 @@
 import React, {Component} from 'react'
 import Bar from './Bar'
+import Legend from './Legend'
+import AnimaLegend from './AnimaLegend'
 
 export default class Camps extends Component {
     constructor() {
         super()
         this.state = {
-            cont: 0
+            cont: 0,
+            legendAnima: ['.']
         }
     }
-    render() {
-        let Anima = setInterval(() => {
-            if(this.state.cont < 100) {
-                console.log(this.state.cont)
+
+    componentDidMount() {
+        let cont = 0
+        let Anima = setInterval(() => {       
+            cont++
+            if (cont <= 100) {
                 this.setState({
-                    cont: this.state.cont++
+                    cont: this.state.cont + 1
                 })
-            } if( this.state.cont === 19 ) {
+                if ( cont % 10 === 0) {
+                    console.log(this.state.cont / 5)
+                    this.setState({
+                        legendAnima: AnimaLegend.vetor[this.state.cont / 10]
+                    }) 
+                }
+            } if( cont === this.props.size ) {
+                this.setState({
+                    legendAnima: this.props.status
+                })
                 clearTimeout(Anima)
             }
-        }, 2000)
+        }, 10)
+
+    }
+
+    render() {
         return (
-            <Bar cont={this.state.cont}/>        
+            <div>
+                <p className={'TitleCamp'}>{this.props.title}</p>
+                <Bar cont={this.state.cont}/>
+                <Legend status={this.state.legendAnima} />
+            </div>          
         )
     }
 }

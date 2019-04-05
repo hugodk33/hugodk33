@@ -19,7 +19,7 @@ export default class Losa extends Component {
                             <div className={'col-3'}></div>
                             <div className={'col-3'}>
                                 <div className={'moldura-2'}></div>
-                                <img className={'horse'} src={require('../styles/css/horse.png')} alt="dadeda"/>
+                                <img className={'horse'} src={require('../img/horse2.png')} alt="dadeda"/>
                                 <div className={'moldura-1'}></div>
                             </div>
                         </div>
