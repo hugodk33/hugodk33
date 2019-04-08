@@ -23,32 +23,308 @@ p {
 }
 
 .moldura-1 {
-  width: 217px;
-  height: 291px;
-  border: 4px blue solid;
+  width: 166px;
+  height: 264px;
   position: absolute;
   -webkit-transform: rotate(20deg);
   transform: rotate(-11deg);
   top: 93px;
-  left: 25px;
+  left: 7px;
   float: left;
 }
 
+.fundo {
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(blue, #020263);
+  border-radius: 100%;
+  position: absolute;
+  top: 151px;
+  left: 5px;
+  -webkit-animation: "anima-fundo" 6s infinite;
+  animation: infinite;
+  animation-name: "anima-fundo";
+  -webkit-animation-name: "anima-fundo";
+  animation-duration: 20s;
+  -webkit-animation-duration: 20s;
+}
+
+@keyframes anima-fundo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .moldura-2 {
-  width: 217px;
-  height: 291px;
-  border: 5px gray solid;
+  width: 166px;
+  height: 264px;
   position: absolute;
   -webkit-transform: rotate(20deg);
   transform: rotate(-11deg);
   top: 105px;
-  left: 41px;
+  left: 22px;
   float: left;
 }
 
+.vetor-moldura-topo-1 {
+  height: 3px;
+  width: 166px;
+  background-color: blue;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-animation: "anima-moldura-t1" 6s infinite;
+  animation: infinite;
+  animation-name: "anima-moldura-t1";
+  -webkit-animation-name: "anima-moldura-t1";
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+}
+
+.vetor-moldura-base-1 {
+  height: 3px;
+  width: 166px;
+  background-color: blue;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  -webkit-animation: "anima-moldura-b1" 6s infinite;
+  animation: infinite;
+  animation-name: "anima-moldura-b1";
+  -webkit-animation-name: "anima-moldura-b1";
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+}
+
+.vetor-moldura-esq-1 {
+  height: 264px;
+  width: 166px;
+  width: 3px;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-animation: "anima-moldura-e1" 6s infinite;
+  animation: infinite;
+  animation-name: "anima-moldura-e1";
+  -webkit-animation-name: "anima-moldura-e1";
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+}
+
+.vetor-moldura-dir-1 {
+  height: 264px;
+  width: 3px;
+  background-color: blue;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-animation: "anima-moldura-d1" 6s infinite;
+  animation: infinite;
+  animation-name: "anima-moldura-d1";
+  -webkit-animation-name: "anima-moldura-d1";
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+}
+
+@keyframes anima-moldura-t1 {
+  0% {
+    width: 0;
+  }
+  5% {
+    width: 166px;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes anima-moldura-e1 {
+  0% {
+    height: 0;
+  }
+  5% {
+    height: 0;
+  }
+  10% {
+    height: 264px;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes anima-moldura-b1 {
+  0% {
+    width: 0;
+  }
+  10% {
+    width: 0;
+  }
+  15% {
+    width: 166px;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes anima-moldura-d1 {
+  0% {
+    height: 0;
+  }
+  15% {
+    height: 0;
+  }
+  20% {
+    height: 264px;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.vetor-moldura-topo-2 {
+  height: 3px;
+  width: 166px;
+  background-color: #d8d8d8;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  -webkit-animation: "anima-moldura-t2" 6s infinite;
+  animation: infinite;
+  animation-name: "anima-moldura-t2";
+  -webkit-animation-name: "anima-moldura-t2";
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+}
+
+.vetor-moldura-base-2 {
+  height: 3px;
+  width: 166px;
+  background-color: #d8d8d8;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  -webkit-animation: "anima-moldura-b2" 6s infinite;
+  animation: infinite;
+  animation-name: "anima-moldura-b2";
+  -webkit-animation-name: "anima-moldura-b2";
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+}
+
+.vetor-moldura-esq-2 {
+  height: 264px;
+  width: 3px;
+  background-color: #d8d8d8;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-animation: "anima-moldura-e2" 6s infinite;
+  animation: infinite;
+  animation-name: "anima-moldura-e2";
+  -webkit-animation-name: "anima-moldura-e2";
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+}
+
+.vetor-moldura-dir-2 {
+  height: 264px;
+  width: 3px;
+  background-color: #d8d8d8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-animation: "anima-moldura-d2" 6s infinite;
+  animation: infinite;
+  animation-name: "anima-moldura-d2";
+  -webkit-animation-name: "anima-moldura-d2";
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+}
+
+@keyframes anima-moldura-t2 {
+  0% {
+    width: 0;
+  }
+  7% {
+    width: 166px;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes anima-moldura-e2 {
+  0% {
+    height: 0;
+  }
+  7% {
+    height: 0;
+  }
+  12% {
+    height: 264px;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes anima-moldura-b2 {
+  0% {
+    width: 0;
+  }
+  12% {
+    width: 0;
+  }
+  17% {
+    width: 166px;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes anima-moldura-d2 {
+  0% {
+    height: 0;
+  }
+  17% {
+    height: 0;
+  }
+  22% {
+    height: 264px;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .horse {
   position: absolute;
   float: left;
+  width: 200px;
+  right: 80px;
+  top: 40px;
 }
 
 .avatar {

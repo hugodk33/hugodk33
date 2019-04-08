@@ -9,17 +9,50 @@
         background-color: #282828;
         color: white;
         border: none;
-        margin: 0 0 6px 5px
+        margin: 6px 0px 6px 0;
+        float: right;
     }
 
     .btnProject {
         background-color: blue;
         color: white;
         border: none;
-        margin: 0 0 6px 0
+        margin: 6px 0px 6px 4px;
+        float: right;
     }
 
     .TituloPort {
         margin-top: 30px
+    }
+
+    hr {
+        border-top: 1px solid gray;
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    img {
+        border: 1px gray solid
+    }
+
+    .linha {
+        padding: 10px 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .Ctn-Circulo-excl {
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        /* background-color: black; */
+        position: absolute;
+        margin-top: -78px;
+        margin-left: -11px;
+        background-image: linear-gradient(blue, #020263);
+        padding: 15px 0 0 0 ;
+        text-shadow: 1px 1px 2px black;
+        text-align: center;
+        font-size: 26px;
     }
 }

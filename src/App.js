@@ -7,11 +7,33 @@ import '../node_modules/jquery/dist/jquery.slim.min'
 import './styles/css/App.css'
 
 class App extends Component {
+  
+  constructor() {
+    super()
+    this.state = {
+      AnimaBio: false
+    }
+  }
+
+  handleScroll() {
+    if (document.documentElement.scrollTop > 200) {
+      if(!this.state.AnimaBio === true) {
+        this.setState({
+          AnimaBio: true
+        })      
+      }
+    }
+  }
+
+  componentDidMount() {
+    window.onscroll = () => this.handleScroll()
+  }
+
   render() {
     return (
       <div>
         <Losa />
-        <Bio />
+        <Bio anima={this.state.AnimaBio}/>
         <Port />
       </div>
     );
