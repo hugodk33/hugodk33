@@ -14,32 +14,41 @@ export default class Camps extends Component {
 
     componentDidMount() {
         let cont = 0
-        let Anima = setInterval(() => {       
-            cont++
-            if (cont <= 100) {
-                this.setState({
-                    cont: this.state.cont + 1
-                })
-                if ( cont % 10 === 0) {
-                    console.log(this.state.cont / 5)
-                    this.setState({
-                        legendAnima: AnimaLegend.vetor[this.state.cont / 10]
-                    }) 
+        if(this.props.data.tamanho !== 0) {
+            console.log('!--0')
+            let Anima = setInterval(() => { 
+                console.log('this.props.data.tamanho')
+                console.log(this.props.data.tamanho)      
+                if(this.props.data.tamanho === 0) {
+                    console.log('entrou aqui')
+                    cont = 0;
+                    clearTimeout(Anima)
                 }
-            } if( cont === this.props.size ) {
-                this.setState({
-                    legendAnima: this.props.status
-                })
-                clearTimeout(Anima)
-            }
-        }, 10)
-
+                cont++
+                if (cont <= 100) {
+                    this.setState({
+                        cont: this.state.cont + 1
+                    })
+                    if ( cont % 10 === 0) {
+                        this.setState({
+                            legendAnima: AnimaLegend.vetor[this.state.cont / 10]
+                        }) 
+                    }
+                } if( cont === this.props.data.tamanho ) {
+                    this.setState({
+                        legendAnima: this.props.data.status
+                    })
+                    clearTimeout(Anima)
+                }
+            }, 10)
+        }
     }
 
     render() {
+        console.log('biocampo 1')
         return (
             <div>
-                <p className={'TitleCamp'}>{this.props.title}</p>
+                <p className={'TitleCamp'}>{this.props.data.titulo}</p>
                 <Bar cont={this.state.cont}/>
                 <Legend status={this.state.legendAnima} />
             </div>          

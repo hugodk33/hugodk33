@@ -14,7 +14,7 @@ export default class CampsTeste extends Component {
 
     componentDidMount() {
         let cont = 0
-        //if( this.props.data.tamanho !== 0) {
+        if(this.props.data.tamanho !== 0) {
             console.log('!--0')
             let Anima = setInterval(() => { 
                 console.log('this.props.data.tamanho')
@@ -41,10 +41,11 @@ export default class CampsTeste extends Component {
                     clearTimeout(Anima)
                 }
             }, 10)
-        //}
+        }
     }
 
     render() {
+        console.log('biocampo 2')
         return (
             <div>
                 <p className={'TitleCamp'}>{this.props.data.titulo}</p>

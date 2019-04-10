@@ -1,23 +1,24 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 import Biocamps from './BioCamps/BioCamp'
 import Biocamps2 from './BioCamps/BIoCampsTeste'
 import '../styles/css/Bio.css'
 import AnimaBios from './AnimaBios'
 
-export default class Bio extends Component {
+class Bio extends Component {
     constructor(props) {
         super(props)
         this.state = {
             AnimaBios: AnimaBios.dois
         }
     }
-
-    componentDidMount () {
-       if(this.props.anima) {
-           alert('deu certo')
-       }
+  
+    componentDidMount() {
+        console.log('bio')
+        console.log(this.props)
     }
-    
+
     render() {
         return(
             <section>
@@ -27,33 +28,33 @@ export default class Bio extends Component {
                             <div className={'col-12 TitlePericia'}>
                                 <h2>Perícias</h2> <hr />
                             </div>
-                            <div className={'col-4'}>
+                            <div className={'col-md-4'}>
                                 <h4>Front End</h4>
-                                <Biocamps2 data={this.state.AnimaBios.js} />
-                                <Biocamps2 data={this.state.AnimaBios.ec6} />
-                                <Biocamps2 data={this.state.AnimaBios.node} />
-                                <Biocamps2 data={this.state.AnimaBios.reactjs} />
-                                <Biocamps2 data={this.state.AnimaBios.angular} />
-                                <Biocamps2 data={this.state.AnimaBios.reactredux} />
-                                <Biocamps2 data={this.state.AnimaBios.reactnative} />
+                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.js} />: <Biocamps data={this.props.anima.animaBios.js} />}
+                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.ec6} />: <Biocamps data={this.props.anima.animaBios.ec6} />}
+                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.node} />: <Biocamps data={this.props.anima.animaBios.node} />}
+                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.reactjs} />: <Biocamps data={this.props.anima.animaBios.reactjs} />}
+                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.angular} />: <Biocamps data={this.props.anima.animaBios.angular} />}
+                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.reactredux} />: <Biocamps data={this.props.anima.animaBios.reactredux} />}
+                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.reactnative} />: <Biocamps data={this.props.anima.animaBios.reactnative} />}
                             </div>
-                            <div className={'col-4'}>
+                            <div className={'col-md-4 '}>
                                 <h4>Web Design</h4>
-                                <Biocamps2 data={this.state.AnimaBios.html} />
-                                <Biocamps2 data={this.state.AnimaBios.css} />
-                                <Biocamps2 data={this.state.AnimaBios.bootstrap} />
-                                <Biocamps2 data={this.state.AnimaBios.wordpress} />
-                                <Biocamps2 data={this.state.AnimaBios.sass} />
-                                <Biocamps2 data={this.state.AnimaBios.gulp} />
-                                <Biocamps2 data={this.state.AnimaBios.illustrator} />
-                                <Biocamps2 data={this.state.AnimaBios.photoshop} />
+                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.html} />: <Biocamps data={this.props.anima.animaBios.html} />}
+                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.css} />: <Biocamps data={this.props.anima.animaBios.css} />}
+                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.bootstrap} />: <Biocamps data={this.props.anima.animaBios.bootstrap} />}
+                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.wordpress} />: <Biocamps data={this.props.anima.animaBios.wordpress} />}
+                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.sass} />: <Biocamps data={this.props.anima.animaBios.sass} />}
+                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.gulp} />: <Biocamps data={this.props.anima.animaBios.gulp} />}
+                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.illustrator} />: <Biocamps data={this.props.anima.animaBios.illustrator} />}
+                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.photoshop} />: <Biocamps data={this.props.anima.animaBios.photoshop} />}
                             </div>  
-                            <div className={'col-4'}>
+                            <div className={'col-md-4'}>
                                 <h4>Back End</h4>
-                                <Biocamps2 data={this.state.AnimaBios.javaee} />
-                                <Biocamps2 data={this.state.AnimaBios.mongodb} />
-                                <Biocamps2 data={this.state.AnimaBios.typescript} />
-                                <Biocamps2 data={this.state.AnimaBios.mysql} />
+                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.javaee} />: <Biocamps data={this.props.anima.animaBios.javaee} />}
+                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.mongodb} />: <Biocamps data={this.props.anima.animaBios.mongodb} />}
+                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.typescript} />: <Biocamps data={this.props.anima.animaBios.typescript} />}
+                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.mysql} />: <Biocamps data={this.props.anima.animaBios.mysql} />}
                             </div>                            
                         </div>
                     </div>
@@ -62,3 +63,8 @@ export default class Bio extends Component {
         )
     }
 }
+
+const mapStateToProps = state => ({anima: state? state.animaBios? console.log('dae'): {animaBios: AnimaBios.dois}: {animaBios: AnimaBios.um}})  
+const mapDispatchToProps = dispatch => 
+    bindActionCreators({}, dispatch)
+export default connect(mapStateToProps, mapDispatchToProps)(Bio)
