@@ -19,15 +19,14 @@ export default class Port extends Component {
                             </div>
                             <div className={"col-md-7"}>
                                 <h4>Outdoor's Web Site</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum diam elit, quis commodo ipsum sollicitudin non. Nunc metus diam, viverra ac diam vitae, accumsan hendrerit mi.</p>
+                                <p>This project aims to create a user experience to highlight the billboard, after loading the page, a message is formed dynamically.</p>
                                 <ul>
-                                    <li>item 1</li>
-                                    <li>item 2</li>
-                                    <li>item 3</li>
-                                    <li>item 4</li>
-                                    <li>item 5</li>
+                                    <li>React JS</li>
+                                    <li>React Redux</li>
+                                    <li>Bootstrap</li>
+                                    <li>Sass</li>
                                 </ul>
-                                <button className={'btnProject'}><i className="far fa-eye"></i> Ver Projeto</button><button className={'btnGitHub'}><i className="fab fa-github-alt"></i> Ver Código</button>                            
+                                <a className={'btnProject'} href="http://github.com/hugodk33/" target="_blank" ><i className="far fa-eye"></i> Ver Projeto</a><a className={'btnGitHub'} href={"http://hugodk33.github.io/websitedois/"} target="_blank"><i className="fab fa-github-alt"></i> Ver Código</a>                            
                             </div>
                             
                         </div>
@@ -37,16 +36,15 @@ export default class Port extends Component {
                                 <div className={'Ctn-Circulo-excl'} >CRUD</div>
                             </div>
                             <div className={"col-md-7"}>
-                                <h4>Outdoor's Web Site</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum diam elit, quis commodo ipsum sollicitudin non. Nunc metus diam, viverra ac diam vitae, accumsan hendrerit mi.</p>
+                                <h4>CRUD with React Redux</h4>
+                                <p>This project consumes an API on a node server, on the front end, json is organized according to subcategories on a nested list. In the form it is possible to search and append to the server, besides cleaning the input, in the list it is possible to edit the items and deleted.</p>
                                 <ul>
-                                    <li>item 1</li>
-                                    <li>item 2</li>
-                                    <li>item 3</li>
-                                    <li>item 4</li>
-                                    <li>item 5</li>
+                                    <li>React JS</li>
+                                    <li>React Redux</li>
+                                    <li>Bootstrap</li>
+                                    <li>Sass</li>
                                 </ul>
-                                <button className={'btnProject'}><i className="far fa-eye"></i> Ver Projeto</button><button className={'btnGitHub'}><i className="fab fa-github-alt"></i> Ver Código</button>                            
+                                <a className={'btnGitHub'} href="http://github.com/hugodk33/" target="_blank" ><i className="fab fa-github-alt"></i> Ver Código</a>                            
                             </div>
                             
                         </div>                        
@@ -56,16 +54,13 @@ export default class Port extends Component {
                                 <div className={'Ctn-Circulo-excl'} >SITE</div>
                             </div>
                             <div className={"col-md-7"}>
-                                <h4>Outdoor's Web Site</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum diam elit, quis commodo ipsum sollicitudin non. Nunc metus diam, viverra ac diam vitae, accumsan hendrerit mi.</p>
+                                <h4>Soluthec's Web Site</h4>
+                                <p>A simple web design project I did for a company</p>
                                 <ul>
-                                    <li>item 1</li>
-                                    <li>item 2</li>
-                                    <li>item 3</li>
-                                    <li>item 4</li>
-                                    <li>item 5</li>
+                                    <li>Bootstrap</li>
+                                    <li>Wordpress</li>
                                 </ul>
-                                <button className={'btnProject'}><i className="far fa-eye"></i> Ver Projeto</button><button className={'btnGitHub'}><i className="fab fa-github-alt"></i> Ver Código</button>                            
+                                <a className={'btnProject'} href="http://soluthec.com.br" target="_blank"><i className="far fa-eye"></i> Ver Projeto</a>                       
                             </div>
                             
                         </div>

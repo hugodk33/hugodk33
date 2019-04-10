@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One");
 @import url("https://fonts.googleapis.com/css?family=Gugi|Iceland|Voces");
+@import url("https://fonts.googleapis.com/css?family=Bad+Script|Mr+Dafoe");
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: "Voces", cursive;
 }
@@ -29,6 +30,11 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.citacao {
+  font-family: "Bad Script", cursive;
+  font-size: 29px;
 }
 
 @keyframes App-logo-spin {

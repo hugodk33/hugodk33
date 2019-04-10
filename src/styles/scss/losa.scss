@@ -23,6 +23,10 @@ p {
     padding-top: 130px;
 }
 
+.losaHorse {
+    
+}
+
 .moldura-1 {
     width: 166px;
     height: 264px;
@@ -270,3 +274,35 @@ p {
     width: 100px;
     float: left;
 }
+
+@media (max-width: 600px) { 
+    .LosaSection {
+        background-size: auto 100%;
+        background-image: url(/static/media/BgMT.3958d698.jpg);
+        height: 450px;
+        overflow: hidden
+    }
+    .txt-banner {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 8px;
+        margin: 18px;
+    }
+    .losaHorse {
+        margin-left: 69%;
+    }
+    .horse {
+        position: absolute;
+        float: left;
+        width: 200px;
+        left: 0;
+        top: 40px;
+    }
+}
+
+@media (min-width: 768px) { }
+
+@media (min-width: 992px) { }
+
+
+@media (min-width: 1200px) { }

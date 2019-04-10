@@ -26,7 +26,7 @@ class Bio extends Component {
                     <div className={'container bio'}>
                         <div className={'row'}>
                             <div className={'col-12 TitlePericia'}>
-                                <h2>Perícias</h2> <hr />
+                                <h2>Skills</h2> <hr />
                             </div>
                             <div className={'col-md-4'}>
                                 <h4>Front End</h4>
