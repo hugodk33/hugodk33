@@ -30,34 +30,31 @@ class Bio extends Component {
                                 <h2>Skills</h2> 
                             </div>
                             <div className={'col-md-5 col-4'} style={{paddingLeft: '0'}}><hr /></div>
-                            <div className={'col-md-4 col-sm-6 col-6'}>
-                                <h4>Front End</h4>
+                            <div className={'col-md-3 col-sm-6 col-6'}>
+                                <h4 style={{color: '#a8a8ff'}}>Front End</h4>
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.js} />: <Biocamps data={this.props.anima.animaBios.js} />}
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.ec6} />: <Biocamps data={this.props.anima.animaBios.ec6} />}
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.node} />: <Biocamps data={this.props.anima.animaBios.node} />}
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.reactjs} />: <Biocamps data={this.props.anima.animaBios.reactjs} />}
+                            </div>
+                            <div className={'col-md-3 col-sm-6 col-6'}>
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.angular} />: <Biocamps data={this.props.anima.animaBios.angular} />}
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.reactredux} />: <Biocamps data={this.props.anima.animaBios.reactredux} />}
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.reactnative} />: <Biocamps data={this.props.anima.animaBios.reactnative} />}
                             </div>
-                            <div className={'col-md-4 col-sm-6 col-6 '}>
-                                <h4>Web Design</h4>
+                            <div className={'col-md-3 col-sm-6 col-6'}>
+                                <h4 style={{color: '#a8a8ff'}}>Web Design</h4>
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.html} />: <Biocamps data={this.props.anima.animaBios.html} />}
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.css} />: <Biocamps data={this.props.anima.animaBios.css} />}
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.bootstrap} />: <Biocamps data={this.props.anima.animaBios.bootstrap} />}
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.wordpress} />: <Biocamps data={this.props.anima.animaBios.wordpress} />}
+                            </div>
+                            <div className={'col-md-3 col-sm-6 col-6'}>
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.sass} />: <Biocamps data={this.props.anima.animaBios.sass} />}
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.gulp} />: <Biocamps data={this.props.anima.animaBios.gulp} />}
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.illustrator} />: <Biocamps data={this.props.anima.animaBios.illustrator} />}
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.photoshop} />: <Biocamps data={this.props.anima.animaBios.photoshop} />}
-                            </div>  
-                            <div className={'col-md-4 col-sm-6 col-6'}>
-                                <h4>Back End</h4>
-                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.javaee} />: <Biocamps data={this.props.anima.animaBios.javaee} />}
-                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.mongodb} />: <Biocamps data={this.props.anima.animaBios.mongodb} />}
-                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.typescript} />: <Biocamps data={this.props.anima.animaBios.typescript} />}
-                                {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.mysql} />: <Biocamps data={this.props.anima.animaBios.mysql} />}
-                            </div>                            
+                            </div>                           
                         </div>
                     </div>
                 </div>

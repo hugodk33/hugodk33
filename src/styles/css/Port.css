@@ -5,6 +5,7 @@
 .PortSection .TitlePort {
   margin-top: 30px;
   text-align: center;
+  color: #6565ff;
 }
 .PortSection .btnGitHub {
   background-color: #282828;

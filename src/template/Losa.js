@@ -51,9 +51,9 @@ export default class Losa extends Component {
                                     <p class="citacao" style={{margin: "-2px auto", float: 'left', fontSize: '20px', color: '#a7a7ff'}}>"Labor improbus omnia vincit."</p>
                                 </div>
                                 <div className={'row'} style={{padding: "0"}}>
-                                    <div className={'btn barraH'} style={{marginRight: '5px', marginLeft: 'auto'}}><i class="fab fa-codepen"></i> Codepen</div>
-                                    <div className={'btn barraH'}><i class="fab fa-github"></i> Github</div>
-                                    <div className={'btn barraH'} style={{marginLeft: '5px', marginRight: 'auto'}}><i class="fab fa-linkedin"></i> Linkedin</div>
+                                    <a href="https://codepen.io/Hugodk33" target="_blank" className={'btn barraH'} style={{marginRight: '5px', marginLeft: 'auto'}}><i class="fab fa-codepen"></i> Codepen</a>
+                                    <a href="https://github.com/hugodk33" target="_blank" className={'btn barraH'}><i class="fab fa-github"></i> Github</a>
+                                    <a href="https://www.linkedin.com/in/hugo-arruda-852aa8161/" target="_blank" className={'btn barraH'} style={{marginLeft: '5px', marginRight: 'auto'}}><i class="fab fa-linkedin"></i> Linkedin</a>
                                 </div>
                             </div>
                         </div>
