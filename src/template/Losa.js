@@ -9,10 +9,7 @@ export default class Losa extends Component {
                     <div className={'container'}>
                         <div className={'row'}>
                             
-                            <div className={'col-md-1'}></div>
-                            <div className={'col-md-3  col-ms-3 losaHorse'}>
-                                <div className={'fundo'}>
-                                </div>
+                            <div className={'losaHorse'}>
                                 <div className={'moldura-2'}>
                                     <div className={'vetor-moldura-topo-2'}>
                                         
@@ -43,13 +40,20 @@ export default class Losa extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className={'col-md-7 col-ms-6 txt-banner'}>
-                                <h2> Victor Hugo Amorim Arruda</h2>
-                                <h4><span className={"tornaCinza"} ><i className={"fas fa-chess-knight"}></i></span> Front End <span className={"tornaCinza"} ><i className="fas fa-chess-bishop"></i></span> Back End <span className={"tornaCinza"} ><i className="fas fa-chess-rook"></i></span> Web Design </h4>
-                                <div className={'col-12'} style={{padding: "0"}}>
-                                    <hr style={{"border": "1px gray solid"}} />
-                                    <p className={'citacao'}>"Labor improbus omnia vincit."</p>  
-                                    <p>29 Anos, Brasileiro, Solteiro.</p> 
+                            <div className={'col-md-12 col-sm-12 txt-banner'}>
+                                <div className={'row'} style={{padding: "0"}}>
+                                    <h3> Victor Hugo Amorim Arruda</h3>
+                                </div>
+                                <div className={'row'} style={{padding: "0"}}>
+                                    <h4 style={{margin: '4px 4px 4px auto'}}><span className={"tornaCinza"} ><i className={"fas fa-chess-knight"}></i></span> Front End </h4><h4 style={{margin: '4px auto 4px 4px'}}><span className={"tornaCinza"} ><i className="fas fa-chess-rook"></i></span> Web Design </h4>
+                                </div>
+                                <div className={'row'} style={{padding: "0"}}>
+                                    <p class="citacao" style={{margin: "-2px auto", float: 'left', fontSize: '20px', color: '#a7a7ff'}}>"Labor improbus omnia vincit."</p>
+                                </div>
+                                <div className={'row'} style={{padding: "0"}}>
+                                    <div className={'btn barraH'} style={{marginRight: '5px', marginLeft: 'auto'}}><i class="fab fa-codepen"></i> Codepen</div>
+                                    <div className={'btn barraH'}><i class="fab fa-github"></i> Github</div>
+                                    <div className={'btn barraH'} style={{marginLeft: '5px', marginRight: 'auto'}}><i class="fab fa-linkedin"></i> Linkedin</div>
                                 </div>
                             </div>
                         </div>

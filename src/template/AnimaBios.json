@@ -21,11 +21,11 @@
         "mysql": {"titulo": "MySQL" , "tamanho": 0 , "status": "." }
     },
     "dois":{
-        "js": {"titulo": "Java Script" , "tamanho": 90 , "status": "AVANÇADO" },
-        "ec6": {"titulo": "EC6" , "tamanho": 80 , "status": "AVANÇADO" },
+        "js": {"titulo": "JavaScript" , "tamanho": 70 , "status": "AVANÇADO" },
+        "ec6": {"titulo": "EC6" , "tamanho": 50 , "status": "AVANÇADO" },
         "node": {"titulo": "Node" , "tamanho": 50 , "status": "INTERMEDIÁRIO" },
         "reactjs": {"titulo": "React JS" , "tamanho": 80 , "status": "AVANÇADO" },
-        "angular": {"titulo": "Angular" , "tamanho": 30 , "status": "NOÇÕES BÁSICAS" },
+        "angular": {"titulo": "Angular" , "tamanho": 10 , "status": "NOÇÕES BÁSICAS" },
         "reactredux": {"titulo": "React Redux" , "tamanho": 80 , "status": "AVANÇADO" },
         "reactnative": {"titulo": "React Native" , "tamanho": 30 , "status": "NOÇÕES BÁSICAS" },
         "html": {"titulo": "HTML" , "tamanho": 90 , "status": "AVANÇADO" },

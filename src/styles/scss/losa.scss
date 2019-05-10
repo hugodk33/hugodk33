@@ -3,7 +3,8 @@
     color: white;
     background-image: url('../../img/BgMT.jpg');
     //background-color: black;
-    height:  650px;
+    height:  450px;
+    background-position: bottom center; 
     padding-top: 60px;
 }
 
@@ -20,21 +21,55 @@ p {
 }
 
 .txt-banner {
-    padding-top: 130px;
+    padding-top: 180px;
+    text-align: center;
+    p {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.4);
+    }  
+    
+    i {
+        color: white
+    }
+
+    h3 {
+        background-color: rgba(0, 0, 0, 0.7);
+        float: left;
+        margin: 4px auto 4px auto;
+        padding: 3px 5px;
+    } 
+    
+    h4 {
+        background-color: rgba(0, 0, 0, 0.7);
+        float: left;
+        margin: 4px auto 4px auto;
+        clear: both;
+        padding: 3px 5px;
+    }
+
+    .barraH {
+        color: white;
+        border: 1px white solid;
+        background-color: rgba(0, 0, 0, 0.7);
+        float: left;
+        margin-top: 7px
+    }
 }
 
 .losaHorse {
-    
+    margin: 4px auto;
+    float: left;
+    width: 170px;
+    height: 1px;
 }
 
 .moldura-1 {
-    width: 166px;
-    height: 264px;
+    width: 136px;
+    height: 234px;
     position: absolute;
     -webkit-transform: rotate(20deg);
     transform: rotate(-11deg);
     top: 93px;
-    left: 7px;
     float: left;
 }
 
@@ -60,20 +95,20 @@ p {
 }
 
 .moldura-2 {
-    width: 166px;
-    height: 264px;
+    width: 136px;
+    height: 234px;
     position: absolute;
     -webkit-transform: rotate(20deg);
     transform: rotate(-11deg);
     top: 105px;
-    left: 22px;
+    margin-left: 20px;
     float: left;
 }
 
 .vetor-moldura-topo-1 {
     height: 3px;
-    width: 166px;
-    background-color: blue;
+    width: 136px;
+    background-color: rgb(167, 167, 255);
     position: absolute;
     top: 0px;
     left: 0px;
@@ -87,8 +122,8 @@ p {
 
 .vetor-moldura-base-1 {
     height: 3px;
-    width: 166px;
-    background-color: blue;
+    width: 136px;
+    background-color: rgb(167, 167, 255);
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -101,10 +136,10 @@ p {
 }
 
 .vetor-moldura-esq-1 {
-    height: 264px;
-    width: 166px;
+    height: 234px;
+    width: 136px;
     width: 3px;
-    background-color: blue;
+    background-color: rgb(167, 167, 255);
     position: absolute;
     top: 0;
     right: 0;
@@ -117,9 +152,9 @@ p {
 }
 
 .vetor-moldura-dir-1 {
-    height: 264px;
+    height: 234px;
     width: 3px;
-    background-color: blue;
+    background-color: rgb(167, 167, 255);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -133,7 +168,7 @@ p {
 
 @keyframes anima-moldura-t1 {
     0% { width: 0 }
-    5% { width: 166px }
+    5% { width: 136px }
     10% { }
     15% { }
     95% {  opacity: 1}
@@ -142,7 +177,7 @@ p {
 @keyframes anima-moldura-e1 {
     0% { height: 0 }
     5% { height: 0 }
-    10% {  height: 264px  }
+    10% {  height: 234px  }
     15% { }
     20% { }
     95% {  opacity: 1}
@@ -152,7 +187,7 @@ p {
     0% { width: 0 }
     5% {  }
     10% { width: 0 }
-    15% { width: 166px  }
+    15% { width: 136px  }
     20% { }    
     95% {  opacity: 1}
     100% { opacity: 0}
@@ -162,14 +197,14 @@ p {
     5% { }
     10% { }
     15% {   height: 0 }
-    20% { height: 264px }
+    20% { height: 234px }
     95% {  opacity: 1}
     100% { opacity: 0}
 }
 
 .vetor-moldura-topo-2 {
     height: 3px;
-    width: 166px;
+    width: 136px;
     background-color: #d8d8d8;
     position: absolute;
     top: 0px;
@@ -184,7 +219,7 @@ p {
 
 .vetor-moldura-base-2 {
     height: 3px;
-    width: 166px;
+    width: 136px;
     background-color: #d8d8d8;
     position: absolute;
     bottom: 0px;
@@ -198,7 +233,7 @@ p {
 }
 
 .vetor-moldura-esq-2 {
-    height: 264px;
+    height: 234px;
     width: 3px;
     background-color: #d8d8d8;
     position: absolute;
@@ -213,7 +248,7 @@ p {
 }
 
 .vetor-moldura-dir-2 {
-    height: 264px;
+    height: 234px;
     width: 3px;
     background-color: #d8d8d8;
     position: absolute;
@@ -229,14 +264,14 @@ p {
 
 @keyframes anima-moldura-t2 {
     0% { width: 0 }
-    7% { width: 166px }
+    7% { width: 136px }
     95% {  opacity: 1}
     100% { opacity: 0}
 }
 @keyframes anima-moldura-e2 {
     0% { height: 0 }
     7% { height: 0 }
-    12% {  height: 264px  }
+    12% {  height: 234px  }
     15% { }
     22% { }
     95% {  opacity: 1}
@@ -246,7 +281,7 @@ p {
     0% { width: 0 }
     7% {  }
     12% { width: 0 }
-    17% { width: 166px  }
+    17% { width: 136px  }
     22% { }
     95% {  opacity: 1}
     100% { opacity: 0}
@@ -257,7 +292,7 @@ p {
     7% { }
     12% { }
     17% {   height: 0 }
-    22% { height: 264px }
+    22% { height: 234px }
     95% {  opacity: 1}
     100% { opacity: 0}
 }
@@ -265,8 +300,7 @@ p {
 .horse {
     position: absolute;
     float: left;
-    width: 200px;
-    right: 80px;
+    width: 170px;
     top: 40px;
 }
 
@@ -275,28 +309,18 @@ p {
     float: left;
 }
 
-@media (max-width: 600px) { 
-    .LosaSection {
-        background-size: auto 100%;
-        background-image: url(/static/media/BgMT.3958d698.jpg);
-        height: 450px;
-        overflow: hidden
-    }
+@media (max-width: 323px) { 
     .txt-banner {
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 8px;
-        margin: 18px;
-    }
-    .losaHorse {
-        margin-left: 69%;
-    }
-    .horse {
-        position: absolute;
-        float: left;
-        width: 200px;
-        left: 0;
-        top: 40px;
+        h3 {
+            font-size: 24px;
+        }
+        h4 {
+            font-size: 18px
+        }
+
+        .barraH {
+            font-size: 13px
+        }
     }
 }
 

@@ -25,10 +25,12 @@ class Bio extends Component {
                 <div className={'BioSection'}>
                     <div className={'container bio'}>
                         <div className={'row'}>
-                            <div className={'col-12 TitlePericia'}>
-                                <h2>Skills</h2> <hr />
+                            <div className={'col-md-5 col-4'} style={{paddingRight: '0'}}><hr /></div>
+                            <div className={'col-md-2  col-4 TitlePericia'}>
+                                <h2>Skills</h2> 
                             </div>
-                            <div className={'col-md-4'}>
+                            <div className={'col-md-5 col-4'} style={{paddingLeft: '0'}}><hr /></div>
+                            <div className={'col-md-4 col-sm-6 col-6'}>
                                 <h4>Front End</h4>
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.js} />: <Biocamps data={this.props.anima.animaBios.js} />}
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.ec6} />: <Biocamps data={this.props.anima.animaBios.ec6} />}
@@ -38,7 +40,7 @@ class Bio extends Component {
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.reactredux} />: <Biocamps data={this.props.anima.animaBios.reactredux} />}
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.reactnative} />: <Biocamps data={this.props.anima.animaBios.reactnative} />}
                             </div>
-                            <div className={'col-md-4 '}>
+                            <div className={'col-md-4 col-sm-6 col-6 '}>
                                 <h4>Web Design</h4>
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.html} />: <Biocamps data={this.props.anima.animaBios.html} />}
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.css} />: <Biocamps data={this.props.anima.animaBios.css} />}
@@ -49,7 +51,7 @@ class Bio extends Component {
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.illustrator} />: <Biocamps data={this.props.anima.animaBios.illustrator} />}
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.photoshop} />: <Biocamps data={this.props.anima.animaBios.photoshop} />}
                             </div>  
-                            <div className={'col-md-4'}>
+                            <div className={'col-md-4 col-sm-6 col-6'}>
                                 <h4>Back End</h4>
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.javaee} />: <Biocamps data={this.props.anima.animaBios.javaee} />}
                                 {this.props.anima.animaBios.js.tamanho === 0? <Biocamps2 data={this.props.anima.animaBios.mongodb} />: <Biocamps data={this.props.anima.animaBios.mongodb} />}

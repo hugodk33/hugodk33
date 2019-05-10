@@ -14,14 +14,14 @@
 
     .Camp {
         margin: 0 0 7px 0;
-        width: 300px;
+        width: 100%;
         background-color: black;
         box-shadow: 2px 2px 0px gray;
         .Barra {
             height: 100%;
-            width: 300px;
-            background-image: linear-gradient(to right, blue, #020263);
-            background-color: #020263
+            width: 100%;
+            background-image: linear-gradient(to right, #6565ff, #0e0edb);
+            background-color: #0e0edb
         }
 
         .BarraMov-iN {
@@ -53,20 +53,24 @@
 
     .TitlePericia {
         margin: 15px 0;
+        text-align: center;
     }
 
     hr {
-        width: 80%;
+        width: 100%;
         float: right;
         border-top: 1px solid white;
-        margin-top: -25px
+        margin-top: 30px
     }
 }
 
 @media (max-width: 600px) { 
     .BioSection {
         hr {
-            width: 50%
+            width: 100%
         }
-    }  
+    }
+    .LosaSection {
+        background-size: auto 100%;
+    } 
 }
